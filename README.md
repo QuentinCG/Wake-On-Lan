@@ -8,7 +8,7 @@ This PHP library is designed to easily wake any device or computer on LAN.
 It is multi-platform and compatible with PHP5+ (no OS specific call).
 
 
-<img src="wakeOnLan.png" width="300">
+<img src="wakeOnLan.jpg" width="300">
 
 
 ## How to install
