@@ -12,7 +12,7 @@
 
 <?php
 
-require_once __DIR__.'/../utils/wakeOnLan.php';
+require_once __DIR__.'/../../utils/wakeOnLan.php';
 
 $macAddress = '01:02:03:04:05:06';
 $broadcastIp = '192.168.1.255';
