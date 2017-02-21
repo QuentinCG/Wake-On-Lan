@@ -8,7 +8,7 @@ This PHP library is designed to easily wake any device or computer on LAN.
 It is multi-platform and compatible with PHP5+ (no OS specific call).
 
 
-<img src="wakeOnLan.jpg" width="300">
+<img src="images/wakeOnLan.jpg" width="300">
 
 
 ## How to install
@@ -22,14 +22,18 @@ It is multi-platform and compatible with PHP5+ (no OS specific call).
 
 ## Examples
 
-One example is provided with this library:
+Two examples are provided with this library:
 
 ### Wake one device on LAN
 <a target="_blank" href="https://github.com/QuentinCG/Wake-On-Lan/blob/master/examples/BasicWakeDeviceOnLan/index.php">Link to source code</a>
 
+<img src="images/basicExample.jpg">
+
 
 ### Wake a device on LAN with a form (broadcast IP, MAC address and port)
 <a target="_blank" href="https://github.com/QuentinCG/Wake-On-Lan/blob/master/examples/WakeDeviceOnLanGui/index.php">Link to source code</a>
+
+<img src="images/guiExample.jpg">
 
 
 ## License
