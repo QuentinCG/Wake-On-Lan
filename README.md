@@ -28,6 +28,10 @@ One example is provided with this library:
 <a target="_blank" href="https://github.com/QuentinCG/Wake-On-Lan/blob/master/examples/BasicWakeDeviceOnLan/index.php">Link to source code</a>
 
 
+### Wake a device on LAN with a form (broadcast IP, MAC address and port)
+<a target="_blank" href="https://github.com/QuentinCG/Wake-On-Lan/blob/master/examples/WakeDeviceOnLanGui/index.php">Link to source code</a>
+
+
 ## License
 
 This project is under MIT license. This means you can use it as you want (just don't delete the library header).
