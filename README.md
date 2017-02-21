@@ -25,15 +25,15 @@ It is multi-platform and compatible with PHP5+ (no OS specific call).
 Two examples are provided with this library:
 
 ### Wake one device on LAN
-<a target="_blank" href="https://github.com/QuentinCG/Wake-On-Lan/blob/master/examples/BasicWakeDeviceOnLan/index.php">Link to source code</a>
+<a target="_blank" href="https://github.com/QuentinCG/Wake-On-Lan/blob/master/examples/BasicWakeDeviceOnLan/index.php">Link to source code
 
-<img src="images/basicExample.jpg">
+<img src="images/basicExample.jpg"></a>
 
 
 ### Wake a device on LAN with a form (broadcast IP, MAC address and port)
-<a target="_blank" href="https://github.com/QuentinCG/Wake-On-Lan/blob/master/examples/WakeDeviceOnLanGui/index.php">Link to source code</a>
+<a target="_blank" href="https://github.com/QuentinCG/Wake-On-Lan/blob/master/examples/WakeDeviceOnLanGui/index.php">Link to source code
 
-<img src="images/guiExample.jpg">
+<img src="images/guiExample.jpg"></a>
 
 
 ## License
