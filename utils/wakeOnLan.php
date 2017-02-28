@@ -41,7 +41,7 @@ function wakeOnLan($macAddressHexadecimal, $broadcastAddress, $port = 7, $timeou
       }
       else
       {
-        error_log("Can't send UDP packet ");
+        error_log("Can't send UDP packet");
       }
       fclose($fp);
     }
@@ -53,7 +53,6 @@ function wakeOnLan($macAddressHexadecimal, $broadcastAddress, $port = 7, $timeou
   else
   {
     error_log("Mac address '{$macAddressHexadecimal}' invalid: Only 0-9 and A-F are allowed (max size of 12 hexadecimal elements)");
-    return false;
   }
   
   return false;
