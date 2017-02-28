@@ -24,6 +24,8 @@
  */
 function wakeOnLan($macAddressHexadecimal, $broadcastAddress, $port = 7, $timeout = 2)
 {
+  $result = false;
+
   // Check if mac address is valid and get its binary version
   $macAddressHexadecimal = str_replace(':', '', $macAddressHexadecimal);
   if (ctype_xdigit($macAddressHexadecimal) && strlen($macAddressHexadecimal) == 12) {
@@ -37,7 +39,7 @@ function wakeOnLan($macAddressHexadecimal, $broadcastAddress, $port = 7, $timeou
     {
       if (fputs($fp, $magicPacket) >= strlen($magicPacket))
       {
-        return true;
+        $result = true;
       }
       else
       {
@@ -55,7 +57,7 @@ function wakeOnLan($macAddressHexadecimal, $broadcastAddress, $port = 7, $timeou
     error_log("Mac address '{$macAddressHexadecimal}' invalid: Only 0-9 and A-F are allowed (max size of 12 hexadecimal elements)");
   }
   
-  return false;
+  return $result;
 }
 
 ?>
