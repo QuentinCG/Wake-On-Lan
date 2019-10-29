@@ -1,5 +1,5 @@
 # Wake On Lan PHP library
-Wake a device on LAN (with PHP5)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9885f1d5340c450681d7cdd3c86d32f0)](https://www.codacy.com/manual/QuentinCG/Wake-On-Lan?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=QuentinCG/Wake-On-Lan&amp;utm_campaign=Badge_Grade)  [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/QuentinCG/Wake-On-Lan/blob/master/LICENSE.md)
 
 ## What is it
 
