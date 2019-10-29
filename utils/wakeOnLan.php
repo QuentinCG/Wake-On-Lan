@@ -28,7 +28,8 @@ function wakeOnLan($macAddrHexa, $broadcastAddress, $port = 7, $timeout = 2)
 
   // Check if mac address is valid and get its binary version
   $macAddrHexa = str_replace(':', '', $macAddrHexa);
-  if (ctype_xdigit($macAddrHexa) && strlen($macAddrHexa) == 12) {
+  if (ctype_xdigit($macAddrHexa) && strlen($macAddrHexa) == 12)
+  {
     $macAddressBinary = pack('H12', $macAddrHexa);
 
     // Create the magic packet to wake up the device on lan
@@ -36,7 +37,11 @@ function wakeOnLan($macAddrHexa, $broadcastAddress, $port = 7, $timeout = 2)
 
     // Send the packet if possible to connect with UDP protocol
     $con = fsockopen('udp://'.$broadcastAddress, $port, $errno, $errstr, $timeout)
-    if ($con)
+    if (!$con)
+    {
+      error_log("Can't open UDP socket '{$errno}': '{$errstr}'");
+    }
+    else
     {
       if (fputs($con, $magicPacket) >= strlen($magicPacket))
       {
@@ -47,10 +52,6 @@ function wakeOnLan($macAddrHexa, $broadcastAddress, $port = 7, $timeout = 2)
         error_log("Can't send UDP packet");
       }
       fclose($con);
-    }
-    else
-    {
-      error_log("Can't open UDP socket '{$errno}': '{$errstr}'");
     }
   }
   else
