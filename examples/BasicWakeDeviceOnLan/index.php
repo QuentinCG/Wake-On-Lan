@@ -20,11 +20,11 @@ $port = 7;
 
 if (wakeOnLan($macAddress, $broadcastIp, $port))
 {
-  echo("'{$macAddress}' is waking up!");
+  echo("'{$macAddress}' is waking up!\n");
 }
 else
 {
-  echo("Coud not contact '{$macAddress}' (with broadcast ip '{$broadcastIp}' and port '{$port}').");
+  echo("Coud not contact '{$macAddress}' (with broadcast ip '{$broadcastIp}' and port '{$port}').\n");
 }
 
 ?>
