@@ -27,7 +27,7 @@
     public function testFailInvalidBroadcastIp()
     {
       $macAddress = '01:02:03:04:05:06';
-      $broadcastIp = 'INV.ALI.DBR.OAD';
+      $broadcastIp = '%!*=)°].INVALID-BROADCAST-IP...';
       $port = 7;
 
       $this->assertFalse(wakeOnLan($macAddress, $broadcastIp));
