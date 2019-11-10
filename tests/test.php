@@ -2,6 +2,9 @@
   require __DIR__ .'/../vendor/autoload.php';
   require __DIR__ .'/../utils/wakeOnLan.php';
 
+  error_reporting(-1);
+  ini_set('display_errors', 'On');
+
   class Test extends PHPUnit_Framework_TestCase
   {
     public function testSuccess()
@@ -30,6 +33,7 @@
       $broadcastIp = '%!*=)°].INVALID-BROADCAST-IP...';
       $port = 7;
 
+      wakeOnLan($macAddress, $broadcastIp);
       $this->assertFalse(wakeOnLan($macAddress, $broadcastIp));
       $this->assertFalse(wakeOnLan($macAddress, $broadcastIp, $port));
     }
