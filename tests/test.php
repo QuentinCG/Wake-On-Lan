@@ -13,5 +13,15 @@
       $this->assertTrue(wakeOnLan($macAddress, $broadcastIp));
       $this->assertTrue(wakeOnLan($macAddress, $broadcastIp, $port));
     }
+
+    public function testFail()
+    {
+      $macAddress = 'IN:VA:LI:DM:AC:AD';
+      $broadcastIp = '192.168.1.255';
+      $port = 7;
+
+      $this->assertFalse(wakeOnLan($macAddress, $broadcastIp));
+      $this->assertFalse(wakeOnLan($macAddress, $broadcastIp, $port));
+    }
   }
 ?>
