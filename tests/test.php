@@ -33,7 +33,6 @@
       $broadcastIp = '%!*=)°].INVALID-BROADCAST-IP...';
       $port = 7;
 
-      wakeOnLan($macAddress, $broadcastIp);
       $this->assertFalse(wakeOnLan($macAddress, $broadcastIp));
       $this->assertFalse(wakeOnLan($macAddress, $broadcastIp, $port));
     }
