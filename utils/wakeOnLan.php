@@ -36,7 +36,16 @@ function wakeOnLan($macAddrHexa, $broadcastAddress, $port = 7, $timeout = 2)
     $magicPacket = str_repeat(chr(0xFF), 6).str_repeat($macAddressBinary, 16);
 
     // Send the packet if possible to connect with UDP protocol
-    $con = fsockopen('udp://'.$broadcastAddress, $port, $errno, $errstr, $timeout);
+    $con = false;
+    try
+    {
+      $con = fsockopen('udp://'.$broadcastAddress, $port, $errno, $errstr, $timeout);
+    }
+    catch(Exception $e)
+    {
+      error_log('Failed to send UDP socket: '.$e->getMessage());
+    }
+
     if ($con)
     {
       if (fputs($con, $magicPacket) >= strlen($magicPacket))
