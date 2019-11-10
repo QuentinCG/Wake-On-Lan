@@ -1,0 +1,19 @@
+{
+    "name": "Wake on LAN",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/QuentinCG/Wake-On-Lan",
+    "description": "Library to wake a device/computer on LAN (PHP, multiplatform)",
+    "keywords": ["wake on lan", "magic packet", "lan", "wake", "mac", "sleep"],
+    "require": {
+        "php": ">=5.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Wake on LAN lib": "utils/"
+        }
+    }
+}

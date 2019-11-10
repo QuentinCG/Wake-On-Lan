@@ -2,9 +2,14 @@ language: php
 php:
   - 5.6
   - 7.0
+before_install:
+  - travis_retry composer self-update
+  - travis_retry composer install --no-interaction --prefer-source --dev
 script:
   # Allow php script to be executed
   - chmod -R 755 *
+  # Launch unit-test using php-unit
+  - vendor/bin/phpunit --coverage-clover=coverage.xml
   # Check that library is not displaying anything on its own
   - cd utils/
   - RES=$(php wakeOnLan.php 2>&1)
@@ -23,3 +28,5 @@ script:
     then echo "Success";
     else echo "Test failed"; return 1;
     fi
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
