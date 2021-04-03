@@ -1,5 +1,5 @@
 {
-    "name": "Wake-On-LAN",
+    "name": "wake-on-lan",
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/QuentinCG/Wake-On-Lan",
