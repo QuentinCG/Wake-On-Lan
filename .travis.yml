@@ -4,7 +4,7 @@ php:
   - 7.0
 before_install:
   - travis_retry composer self-update
-  - travis_retry composer install --no-interaction --prefer-source --dev
+  - travis_retry composer install --no-interaction --prefer-source
 script:
   # Allow php script to be executed
   - chmod -R 755 *
