@@ -1,5 +1,5 @@
 {
-    "name": "Wake on LAN",
+    "name": "Wake-On-LAN",
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/QuentinCG/Wake-On-Lan",
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Wake on LAN lib": "utils/"
+            "Wake-On-LAN lib": "utils/"
         }
     }
 }
